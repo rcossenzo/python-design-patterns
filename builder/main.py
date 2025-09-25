@@ -30,7 +30,7 @@ class ConcreteBuilder1(Builder):
         self._product = Product1()
 
     @property
-    def product(self, a: str) -> Product1:
+    def product(self) -> Product1:
         product = self._product
         self.reset()
         return product
